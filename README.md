@@ -1,2 +1,6 @@
-# Jaringan-kantor-dengan-VLAN
-Jaringan kantor dengan VLAN: Switch Cisco dengan VLAN per divisi, inter-VLAN routing (router-on-a-stick atau switch Layer 3), DHCP server di router, dan akses SSH ke perangkat.
+# 🍎Switch Cisco dengan VLAN per Divisi, Inter-VLAN Routing (Router-On-A-Stick atau Switch Layer 3), dan DHCP Server Di Router.
+
+## 🌶️Ringkasan
+Mengimplementasikan Inter-VLAN Di Berbeda Divisi Dan Mengaplikasikan DHCP Server Pada Router Menggunakan Cisco Packet Tracer.
+
+## 🍳
