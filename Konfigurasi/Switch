@@ -26,4 +26,3 @@ SW-Cisco(config-if)#switchport mode trunk
 SW-Cisco(config-if)#do write
 Building configuration...
 [OK]
-SW-Cisco(config-if)#
