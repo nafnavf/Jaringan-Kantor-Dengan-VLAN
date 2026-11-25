@@ -30,7 +30,7 @@ Selain itu, router difungsikan sebagai DHCP Server untuk memberikan alamat IP se
 |--------|--------------|
 | Switch | Vlan 10, Vlan 20 dan Vlan 30 |
 | Router | Router-On-A-Stick dan Server DHCP |
-| IP | 192.168.10.0/29 (Vlan 10), 192.168.20.0/29 (Vlan 20) dan 192.168.30.0/29 (Vlan 30) |
+| IP PC | 192.168.10.0/29 (Vlan 10), 192.168.20.0/29 (Vlan 20) dan 192.168.30.0/29 (Vlan 30) |
 
 #
 
