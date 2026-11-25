@@ -38,5 +38,4 @@ Selain itu, router difungsikan sebagai DHCP Server untuk memberikan alamat IP se
 
 #
 
-<img width="455" height="405" alt="image" src="https://github.com/user-attachments/assets/b6ff0c60-e8b7-4e9f-9df0-7b3655cbe60f" />
-
+<img width="327" height="320" alt="image" src="https://github.com/user-attachments/assets/1c5558f4-83cd-41f3-87a5-9737d3d30180" />
