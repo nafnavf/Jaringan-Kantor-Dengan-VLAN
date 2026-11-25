@@ -1,0 +1,56 @@
+🥐Hasil Konfigurasi
+
+*Catatan: Pastikan Konfigurasi IP di PC sudah diubah ke mode DHCP dan mendapatkan IP yang sudah dikonfigurasi DHCP Server lewat Router.
+
+🧇PC 1 di Vlan 10:
+C:\>ipconfig
+
+FastEthernet0 Connection:(default port)
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: FE80::230:F2FF:FEC4:414B
+   IPv6 Address....................: ::
+   IPv4 Address....................: 192.168.10.2 ————> merupakan IP yang didapatkan klien dari server
+   Subnet Mask.....................: 255.255.255.248
+   Default Gateway.................: ::
+                                     192.168.10.1
+
+Bluetooth Connection:
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: ::
+   IPv6 Address....................: ::
+   IPv4 Address....................: 0.0.0.0
+   Subnet Mask.....................: 0.0.0.0
+   Default Gateway.................: ::
+                                     0.0.0.0
+
+🍰PC dari Vlan 30 mencoba untuk ping ke PC dari Vlan 10 dan 20
+
+C:\>ping 192.168.10.3
+
+Pinging 192.168.10.3 with 32 bytes of data:
+
+Reply from 192.168.10.3: bytes=32 time<1ms TTL=127
+Reply from 192.168.10.3: bytes=32 time<1ms TTL=127
+Reply from 192.168.10.3: bytes=32 time=1ms TTL=127
+Reply from 192.168.10.3: bytes=32 time<1ms TTL=127
+
+Ping statistics for 192.168.10.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+C:\>ping 192.168.20.2
+
+Pinging 192.168.20.2 with 32 bytes of data:
+
+Reply from 192.168.20.2: bytes=32 time<1ms TTL=127
+Reply from 192.168.20.2: bytes=32 time<1ms TTL=127
+Reply from 192.168.20.2: bytes=32 time=1ms TTL=127
+Reply from 192.168.20.2: bytes=32 time<1ms TTL=127
+
+Ping statistics for 192.168.20.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
