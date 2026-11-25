@@ -1,2 +1,55 @@
 🍨Konfigurasi Router Cisco
 
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname R-Cisco
+R-Cisco(config)#interface gig0/1
+R-Cisco(config-if)#no shutdown
+
+R-Cisco(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+
+R-Cisco(config-if)#interface g0/1.10
+R-Cisco(config-subif)#
+%LINK-3-UPDOWN: Interface GigabitEthernet0/1.10, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1.10, changed state to up
+
+R-Cisco(config-subif)#encapsulation dot1q 10
+R-Cisco(config-subif)#ip address 192.168.10.1 255.255.255.248
+R-Cisco(config-subif)#interface g0/1.20
+R-Cisco(config-subif)#
+%LINK-3-UPDOWN: Interface GigabitEthernet0/1.20, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1.20, changed state to up
+
+R-Cisco(config-subif)#encapsulation dot1q 20
+R-Cisco(config-subif)#ip address 192.168.20.1 255.255.255.248
+R-Cisco(config-subif)#interface g0/1.30
+R-Cisco(config-subif)#
+%LINK-3-UPDOWN: Interface GigabitEthernet0/1.30, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1.30, changed state to up
+
+R-Cisco(config-subif)#encapsulation dot1q 30
+R-Cisco(config-subif)#ip address 192.168.30.1 255.255.255.248
+R-Cisco(config-subif)#ex
+R-Cisco(config)#ip dhcp pool Vlan-HR
+R-Cisco(dhcp-config)#network 192.168.10.0 255.255.255.248
+R-Cisco(dhcp-config)#default-router 192.168.10.1
+R-Cisco(dhcp-config)#dns-server 8.8.8.8
+R-Cisco(dhcp-config)#ip dhcp pool Vlan-Sales
+R-Cisco(dhcp-config)#network 192.168.20.0 255.255.255.248
+R-Cisco(dhcp-config)#default-router 192.168.20.1
+R-Cisco(dhcp-config)#dns-server 8.8.8.8
+R-Cisco(dhcp-config)#ip dhcp pool Vlan-IT
+R-Cisco(dhcp-config)#network 192.168.30.0 255.255.255.248
+R-Cisco(dhcp-config)#default-router 192.168.30.1
+R-Cisco(dhcp-config)#dns-server 8.8.8.8
+R-Cisco(dhcp-config)#ex
+R-Cisco(config)#do write
+Building configuration...
+[OK]
