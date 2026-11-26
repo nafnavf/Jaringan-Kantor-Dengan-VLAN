@@ -5,7 +5,7 @@ Proyek ini bertujuan untuk merancang dan membangun simulasi jaringan komputer pa
 
 Setiap divisi memiliki jaringan tersendiri untuk meningkatkan keamanan, efisiensi, dan pengelolaan lalu lintas data. Agar setiap divisi tetap dapat berkomunikasi, diterapkan konfigurasi Inter-VLAN Routing menggunakan metode Router-on-a-Stick atau Switch Layer 3.
 
-Selain itu, router difungsikan sebagai DHCP Server untuk memberikan alamat IP secara otomatis kepada komputer klien. Akses SSH juga diterapkan agar administrator dapat melakukan konfigurasi dan pengelolaan perangkat jaringan secara jarak jauh dengan aman.
+Selain itu, router difungsikan sebagai DHCP Server untuk memberikan alamat IP secara otomatis kepada komputer klien.
 
 ## 🍳Topologi
 <img width="846" height="403" alt="image" src="https://github.com/user-attachments/assets/b1c89853-0d65-466d-a8b9-5fbbcc1a9e0c" />
